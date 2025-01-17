@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Sunil Kumar Reddy Yaparla</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #f9f9f9, #e9e9e9);
+      color: #333;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    section {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    section h2 {
+      font-size: 1.8em;
+      color: #007bff;
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin: 8px 0;
+    }
+
+    .hero {
+      text-align: center;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hero img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #007bff;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    .project {
+      margin-bottom: 20px;
+    }
+
+    .project a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="photo">
+          <img src="pass pic.JPG" alt="Sunil Kumar Reddy Yaparla">
+        </div>
+        <div class="info">
+          <h1>Sunil Kumar Reddy Yaparla</h1>
+          <p class="subtitle">Python Stack Developer | Full Stack Enthusiast</p>
+          <p><i class="icon-map-pin"></i> Pulivendula, A.P - 516339</p>
+          <p><i class="icon-phone"></i> +91 9392459171</p>
+          <div class="links">
+            <a href="mailto:sunilreddyyaparla@gmail.com" class="link">Email</a>
+            <a href="https://www.linkedin.com/in/yaparla-sunil-kumar-reddy-457662233" class="link">LinkedIn</a>
+            <a href="https://github.com/Sunilreddyyaparla/my-python-projects.git" class="link">GitHub</a>
+            <a href="https://leetcode.com/sunilreddyyaparla/" class="link">LeetCode</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+      <h2>Featured Projects</h2>
+      <div id="project-list">
+        <!-- Projects will be dynamically loaded here -->
+      </div>
+    </section>
+
+    <!-- Other Sections -->
+    <section class="education">
+      <h2>Education</h2>
+      <div class="education-item">
+        <h3>B.Tech - Electrical and Electronics</h3>
+        <p>JNTUA College of Engineering, Ananthapuramu</p>
+        <p>Percentage: 83.3</p>
+      </div>
+      <div class="education-item">
+        <h3>Intermediate - MPC</h3>
+        <p>Sri Chaitanya Jr. College, Tirupathi</p>
+        <p>Percentage: 97.5</p>
+      </div>
+      <div class="education-item">
+        <h3>Secondary School Certificate (SSC)</h3>
+        <p>Sri Sangameswara High School, Kadapa</p>
+        <p>CGPA: 10.0</p>
+      </div>
+    </section>
+
+    <section class="certifications">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Young Python Professional - Infosys</li>
+        <li>HTML5 - Infosys</li>
+        <li>CSS3 - Infosys</li>
+        <li>DBMS - Infosys</li>
+        <li>Data Structures and Algorithms (DSA) - Infosys</li>
+        <li>Introduction to NoSQL Databases - Infosys</li>
+      </ul>
+    </section>
+
+    <section class="skills">
+      <h2>Technical Proficiencies</h2>
+      <ul>
+        <li>Programming: Python (OOP, Data Structures), Java Fundamentals</li>
+        <li>Web Development: HTML, CSS</li>
+        <li>Databases: SQL (Oracle)</li>
+        <li>Frameworks: Flask</li>
+        <li>Tools: MS Office Suite</li>
+        <li>Methodologies: Waterfall, Agile</li>
+      </ul>
+    </section>
+
+    <section class="activities">
+      <h2>Additional Activities</h2>
+      <ul>
+        <li>Member of organizing committee in EYE 2K24 Symposium</li>
+        <li>Member of NSS Committee</li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- JavaScript for Dynamic Project Rendering -->
+  <script>
+    const projects = [
+  {
+    title: "Pet Haven",
+    technologies: "Flask, Python, HTML, CSS, SQL",
+    description: "A full-stack pet care platform with e-commerce and booking systems.",
+    link: "https://sunilreddyyaparla.github.io/pet-haven/",
+  },
+  {
+    title: "EYE 2K25",
+    technologies: "Flask, Python, HTML, CSS",
+    description: "A comprehensive event registration website for technical events.",
+    link: "https://sunilreddyyaparla.github.io/eye2k25/",
+  },
+  {
+    title: "Auto-Mob Mechanic",
+    technologies: "HTML, CSS",
+    description: "A web application for booking car service appointments with user-friendly forms.",
+    link: "https://sunilreddyyaparla.github.io/automob-mechanic/",
+  },
+  {
+    title: "Online Examination Management System",
+    technologies: "HTML, CSS",
+    description: "A web application to streamline online assessments.",
+    link: "https://sunilreddyyaparla.github.io/online-exam/",
+  },
+  {
+    title: "Expense Tracker",
+    technologies: "Python, OOP",
+    description: "A Python-based tool for managing finances, tracking expenses, and analyzing spending patterns.",
+    link: "https://github.com/Sunilreddyyaparla/my-python-projects",
+  },
+  {
+    title: "Password Generator",
+    technologies: "Python, Random Module",
+    description: "A secure random password generator implementing various character combinations.",
+    link: "https://github.com/Sunilreddyyaparla/my-python-projects",
+  },
+];
+
+const projectList = document.getElementById("project-list");
+
+projects.forEach((project) => {
+  const projectDiv = document.createElement("div");
+  projectDiv.classList.add("project");
+
+  const projectContent = `
+    <h3>${project.title}</h3>
+    <p><strong>Technologies:</strong> ${project.technologies}</p>
+    <p>${project.description}</p>
+    <a href="${project.link}" target="_blank">View Project</a>
+  `;
+
+  projectDiv.innerHTML = projectContent;
+  projectList.appendChild(projectDiv);
+});
+
+  </script>
+</body>
+</html>
